@@ -212,7 +212,8 @@ english_tweets = FILTER tweets BY lang == 'en';
 ```sql
 tokenized = FOREACH english_tweets GENERATE id_str,
     FLATTEN( TOKENIZE(text) ) AS word;
-    clean_tokens = FOREACH tokenized GENERATE id_str,
+
+clean_tokens = FOREACH tokenized GENERATE id_str,
     LOWER(REGEX_EXTRACT(word, '[#@]{0,1}(.*)', 1)) AS word;
 
 grunt> ILLUSTRATE clean_tokens;
