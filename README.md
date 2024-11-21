@@ -130,11 +130,9 @@ hbase> get 'linkshare', 'org.hbase.www'
 
 hbase> get 'linkshare', 'org.hbase.www', ['link:title', 'statistics:share']
 
-hbase> get 'linkshare', 'org.hbase.www', {COLUMN => 'statistics:share',
-VERSIONS => 2}
+hbase> get 'linkshare', 'org.hbase.www', {COLUMN => 'statistics:share', VERSIONS => 2}
 
-hbase> get 'linkshare', 'org.hbase.www', {TIMERANGE => [1399887705673,
-1400133976734]}
+hbase> get 'linkshare', 'org.hbase.www', {TIMERANGE => [1399887705673, 1400133976734]}
 ```
 
 ## Searching Rows
@@ -197,8 +195,7 @@ tweets = LOAD 'united_airlines_tweets.tsv' USING PigStorage('\t')
     text:chararray, lang:chararray, retweet_count:int, favorite_count:int,
     screen_name:chararray);
 
-dictionary = LOAD 'dictionary.tsv' USING PigStorage('\t') AS (word:chararray,
-    score:int);
+dictionary = LOAD 'dictionary.tsv' USING PigStorage('\t') AS (word:chararray, score:int);
 ```
 
 ## Filtering
