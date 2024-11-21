@@ -1,3 +1,12 @@
+# Table of Contents
+
+1. [**Hive Query Language**](<#hive-query-language(HQL)>)
+2. [**HBase**](#hbase)
+3. [**Scoop**](#scoop)
+4. [**Pig Latin**](#pig-latin)
+5. [**Spark’s Higher-Level APIs**](#sparks-higher-level-apis)
+6. [**Scalable Machine Learning with Spark**](#scalable-machine-learning-with-spark)
+
 # Hive Query Language (HQL)
 
 ## Creating a Database
